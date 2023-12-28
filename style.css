@@ -4,9 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cairo', sans-serif;
-}
-
+  font-family: 'Cairo', sans-serif;}
 body {
   display: flex;
   justify-content: center;
@@ -15,16 +13,13 @@ body {
   overflow: hidden;
   background: #dcd9cd;
 }
-
 ul {
   position: relative;
 }
-
 ul li {
   list-style: none;
   text-align: center;
 }
-
 ul li a {
   color: #333;
   text-decoration: none;
@@ -34,16 +29,13 @@ ul li a {
   font-weight: 700;
   transition: 0.5s;
 }
-
 ul:hover li a {
   color: #0002;
 }
-
 ul li:hover a {
   color: #000;
   background: transparent;
 }
-
 ul li a:before {
   content: "";
   position: absolute;
@@ -63,7 +55,6 @@ ul li a:before {
   letter-spacing: 500px;
   transition: letter-spacing 0.5s, left 0.5s;
 }
-
 ul li a:hover:before {
   content: attr(data-text);
   opacity: 1;
@@ -72,39 +63,21 @@ ul li a:hover:before {
   width: 1800px;
   height: 1800px;
 }
-
 ul li:nth-child(6n + 1) a:before {
   background: #0470fe;
 }
-
 ul li:nth-child(6n + 2) a:before {
   background: #ff7675;
 }
-
 ul li:nth-child(6n + 3) a:before {
   background: #1582fe;
 }
-
 ul li:nth-child(6n + 4) a:before {
   background: #a29bfe;
 }
-
 ul li:nth-child(6n + 5) a:before {
   background: #fd79a8;
 }
-
 ul li:nth-child(6n + 6) a:before {
   background: #ffeaa7;
-}
-
-/* Media Query for smaller screens */
-@media only screen and (max-width: 768px) {
-  ul li a {
-    font-size: 2em;
-    padding: 5px 10px;
-  }
-
-  ul li a:before {
-    font-size: 4em;
-  }
 }
