@@ -9,15 +9,19 @@
 <body>
 
     <header>
-        <h1>Art Gallery</h1>
-    </header>
+        <div class ="header-image">
+            <h1>6/1</h1>
+        </div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    </header>
+    <ul class="nav-links">
+        <li class="forward"><a href="#">6/2</a></li>
+        <li class="forward"><a href="#">6/3</a></li>
+        <li class="forward"><a href="#">6/4</a></li>
+        <li class="forward"><a href="#">6/5</a></li>
+        <li class="forward"><a href="#">6/6</a></li>
+        <li class="forward"><a href="#">Teacher</a></li>
+      </ul>
 
     <div class="gallery">
         <!-- Replace the following with your art pieces -->
@@ -25,7 +29,10 @@
             <img src="artwork1.png" alt="Artwork 1">
         </div>
         <div class="art-piece" onclick="showPopup('Artwork 2', 'Creator 2', 'artwork2.jpg')">
-            <img src="artwork2.jpg" alt="Artwork 2">
+            <img src="artwork2.png" alt="Artwork 2">
+        </div>
+        <div class="art-piece" onclick="showPopup('Artwork 3', 'Creator 3', 'artwork3.jpg')">
+            <img src="artwork3.jpg" alt="Artwork ">
         </div>
         <!-- Add more art pieces as needed -->
     </div>
@@ -34,12 +41,12 @@
 <!-- ... (your existing HTML code) ... -->
 
 <!-- Popup -->
-<div class="popup" id="popup">
-    <div class="popup-content">
+<div class="popup" id="popup" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation();">
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <h2 id="popup-title" class="popup-title"></h2>
         <hr class="separator">
-        <div class="popup-content-inner">
+        <div class="popup-content-inner"> 
             <div class="image-container">
                 <img id="popup-image" style="max-width: 100%;" alt="Artwork">
             </div>
@@ -47,7 +54,7 @@
                 <p id="popup-description"></p>
                 <div class="profile-content">
                     <div class="profile-container">
-                        <img class = "popup-profile" id="popup-profile" style="max-width: 100%;" alt="Creator's Profile">
+                        <img class="popup-profile" id="popup-profile" style="max-width: 100%;" alt="Creator's Profile">
                     </div>
                     <p id="popup-creator"></p>
                 </div>
@@ -55,6 +62,7 @@
         </div>
     </div>
 </div>
+
 
 <script src="scripts.js"></script>
 </body>
