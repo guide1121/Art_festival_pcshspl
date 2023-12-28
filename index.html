@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="gallery">
+        <!-- Replace the following with your art pieces -->
+        <div class="art-piece" onclick="showPopup('Artwork 1', 'Creator 1', 'artwork1.jpg')">
+            <img src="artwork1.png" alt="Artwork 1">
+        </div>
+        <div class="art-piece" onclick="showPopup('Artwork 2', 'Creator 2', 'artwork2.jpg')">
+            <img src="artwork2.jpg" alt="Artwork 2">
+        </div>
+        <!-- Add more art pieces as needed -->
+    </div>
+
+<!-- Popup -->
+<!-- ... (your existing HTML code) ... -->
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2 id="popup-title" class="popup-title"></h2>
+        <hr class="separator">
+        <div class="popup-content-inner">
+            <div class="image-container">
+                <img id="popup-image" style="max-width: 100%;" alt="Artwork">
+            </div>
+            <div class="text-container">
+                <p id="popup-description"></p>
+                <div class="profile-content">
+                    <div class="profile-container">
+                        <img class = "popup-profile" id="popup-profile" style="max-width: 100%;" alt="Creator's Profile">
+                    </div>
+                    <p id="popup-creator"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
+<!-- ... (your existing HTML code) ... -->
+
+
+    <footer>
+        &copy; 2023 Art Gallery
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

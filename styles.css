@@ -1,0 +1,281 @@
+/* Add your existing CSS styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.art-piece {
+    border: 3px solid #000; /* Increase the border width */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.art-piece:hover {
+    transform: scale(1.05);
+    border: 3px solid #7b7b7b; /* Border color on hover */
+}
+
+.art-piece img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.popup-profile {
+    border-radius: 50%;
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+  }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.popup-content-inner {
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Align items vertically in the text container */
+}
+
+.profile-container {
+    width: 80px; /* Adjust the width of the profile picture container */
+    margin-right: 20px; /* Adjust the margin between the profile picture and text */
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Align items vertically in the text container */
+}
+
+.profile-container {
+    width: 80px; /* Adjust the width of the profile picture container */
+    margin-right: 20px; /* Adjust the margin between the profile picture and text */
+}
+
+.text-content {
+    flex: 1;
+}
+
+.popup-title {
+    text-align: center;
+}
+
+.separator {
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Align items vertically in the text container */
+}
+
+.profile-container {
+    width: 80px; /* Adjust the width of the profile picture container */
+    margin-right: 20px; /* Adjust the margin between the profile picture and text */
+}
+
+.text-content {
+    flex: 1;
+}
+
+.popup-title {
+    text-align: center;
+}
+
+.separator {
+    margin:px 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Align items vertically in the text container */
+}
+
+.profile-container {
+    width: 80px; /* Adjust the width of the profile picture container */
+    margin-right: 20px; /* Adjust the margin between the profile picture and text */
+}
+
+.text-content {
+    flex: 1;
+}
+
+.popup-title {
+    text-align: center;
+}
+
+.separator {
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+    background: #333;
+}
+
+.popup-content-inner {
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.profile-content {
+    display: flex; /* Arrange elements in a row */
+    align-items: center; /* Align items vertically in the text container */
+}
+
+.profile-container {
+    width: 80px; /* Adjust the width of the profile picture container */
+    margin-right: 20px; /* Adjust the margin between the profile picture and text */
+}
+
+.text-content {
+    flex: 1;
+}
+.popup-profile {
+    border-radius: 50%;
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  
